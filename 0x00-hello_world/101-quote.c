@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include <unistd.h>
+#include <stdlib.h>
 
 /**
 * main - print quote
 *
 * Description: print Dora's quote
 *
-* Retun: Always 1 (Success)
+* Return: Always 1 (Success)
 */
 int main(void)
 {
