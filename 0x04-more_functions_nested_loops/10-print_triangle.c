@@ -1,37 +1,26 @@
 #include "main.h"
 
 /**
- * main - Fizz Buzz
+ * print_triangle - print a triangle in the terminal
+ * @size: base & height of triangle
  *
- * Return: Always 0.
+ * Return: void
  */
 
-int main(void)
+void print_triangle(int size)
 {
-	int i;
+	int linenum;
+	int linelen;
 
-	for (i = 1; i <= 100; ++i)
+	for (linenum = 1; linenum <= size; ++linenum)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			printf("FizzBuzz");
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz");
-		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz");
-		}
-		else
-		{
-			printf("%d", i);
-		}
-		if (i < 100)
-			putchar(' ');
-		else
-			putchar('\n');
+		for (linelen = size; linelen > linenum; --linelen)
+			_putchar(' ');
+		for ( ; linelen > 0; --linelen)
+			_putchar('#');
+		_putchar('\n');
 	}
-	return (0);
+
+	if (size <= 0)
+		_putchar('\n');
 }
