@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+/*magic*/
 int main(void)
 {
 	int n;
