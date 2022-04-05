@@ -27,14 +27,14 @@ char *argstostr(int ac, char **av)
 	if (!cat)
 		return (NULL);
 
-		for (arg = 0, size = 0; arg < ac; ++arg, ++size)
-		{
-			for (chr = av[arg]; *chr; ++chr, ++size)
-				cat[size] = *chr;
-			cat[size] = '\n';
-		}
+	for (arg = 0, size = 0; arg < ac; ++arg, ++size)
+	{
+		for (chr = av[arg]; *chr; ++chr, ++size)
+			cat[size] = *chr;
+		cat[size] = '\n';
+	}
 
-		cat[size] = '\0';
+	cat[size] = '\0';
 
-		return (cat);
+	return (cat);
 }
