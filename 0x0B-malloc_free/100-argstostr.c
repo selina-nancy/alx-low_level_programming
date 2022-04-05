@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 	if (!cat)
 		return (NULL);
 
-		for (arg = 0, size = 0; arg < ac; ++arg, ++size)
+	for (arg = 0, size = 0; arg < ac; ++arg, ++size)
 		{
 			for (chr = av[arg]; *chr; ++chr, ++size)
 				cat[size] = *chr;
@@ -37,4 +37,4 @@ char *argstostr(int ac, char **av)
 		cat[size] = '\0';
 
 		return (cat);
-	}
+}
