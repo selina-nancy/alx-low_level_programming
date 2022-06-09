@@ -66,8 +66,5 @@ An introductory project on:
 
 
 
-**[palindrome.py](palindrome.py)** - python script to find the largest palindrome made from the product of two 3-digit numbers.
-
-
 
 **[103-keygen.c](103-keygen.c)** - a keygen for [crackme5](https://github.com/holbertonschool/0x17.c).
