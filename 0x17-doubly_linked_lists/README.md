@@ -10,8 +10,6 @@ An introductory project on:
 
 - Ubuntu 14.04
 
-- gcc 4.8.4
-
 ## File Descriptions
 
 ### Mandatory
